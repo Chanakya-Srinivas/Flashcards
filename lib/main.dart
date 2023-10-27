@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'views/decklist.dart';
+import 'views/dashboard.dart';
 
 void main() async {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: DeckList(),
+    home: Dashboard(),
+    title: 'Flashcard Decks',
   ));
 }
