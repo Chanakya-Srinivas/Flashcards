@@ -51,7 +51,10 @@ class Flashcards extends StatelessWidget{
                   deck!.flashcards.addAll(originalList.toList());
                   originalList.clear();
                 } else {
-                  originalList.addAll(deck!.flashcards as Iterable<Flashcard>);
+                  for(int i=0;i<deck!.flashcards.length;i++){
+                    originalList.add(deck!.flashcards[i]);
+                  }
+                  // originalList.addAll(deck!.flashcards as Iterable<Flashcard>);
                   deck!.flashcards.sort((a, b) => a.question.compareTo(b.question));
                 }
                 print('sort clicked');
