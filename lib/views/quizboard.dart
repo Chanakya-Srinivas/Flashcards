@@ -27,7 +27,7 @@ class QuizBoard extends StatelessWidget{
           seen.add(notifier!.index);
         }
         return Column(
-          //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SizedBox(height: (MediaQuery.of(context).size.height * 0.01).toDouble(),),
